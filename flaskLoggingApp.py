@@ -10,7 +10,7 @@ def getHello():
   
     client = logging.Client()
 
-    logger = client.logger(logger_name)
+    logger = client.logger("service_1")
     
     logger.log_struct(
         {
