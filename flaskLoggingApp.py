@@ -1,5 +1,5 @@
 
-import logging
+import logging as pythonlogger
 from google.cloud import logging 
 from flask import Flask
 app = Flask(__name__)
@@ -24,7 +24,7 @@ def getHello():
     text = "Hello GCP!"
 
     
-    logging.warning(text)
+    pythonlogger.warning(text)
 
     return "Hello Flipkart"
   
